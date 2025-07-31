@@ -14,9 +14,15 @@
         "tab": "Manual",
         "groups": [
           {
-            "group": "Guía",
+            "group": "Linear for Dummies",
             "pages": [
-              "index"
+              "index",
+              "intro",
+              "flujo",
+              "ejecutores",
+              "leads",
+              "shortcuts",
+              "glosario"
             ]
           }
         ]

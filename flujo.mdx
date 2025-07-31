@@ -1,0 +1,35 @@
+---
+title: "Flujo de Trabajo"
+description: "Ciclo de vida de un issue y nomenclatura."
+---
+
+## Flujo de Trabajo
+
+### 2.1 Ciclo de vida de un Issue
+
+```mermaid
+flowchart LR
+    A[To‑Do] --> B[En Edición]
+    B --> C[Para Revisar]
+    C -- Cambios? -->|Sí| B
+    C -- OK --> D[Listo/Subido]
+```
+
+### 2.2 Status principales
+
+* **To‑Do:** Listo para empezar (Lead lo crea).
+* **En Edición:** En progreso (Ejecutor).
+* **Para Revisar / Para Corregir:** Terminado y esperando feedback (Ejecutor) o necesita ajustes (Lead).
+* **Listo/Subido:** Aprobado por cliente o Lead.
+
+### 2.3 Nomenclatura de Issues
+
+```
+[InicialesProyecto]_[TipoContenido]_[Nombre]
+Ej.: CL_CLIP_Maternidad
+```
+
+### 2.4 Relaciones entre Issues
+
+* **Bloquea a:** Este issue impide que otros empiecen.
+* **Bloqueado por:** No se puede iniciar hasta que el bloqueador termine. (Clic derecho en el issue → *Marcar como* → elegir relación.)
